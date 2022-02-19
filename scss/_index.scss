@@ -1,0 +1,21 @@
+/* Clases para index.html ---------------------------------------------------*/
+
+.fotoIndex {
+    @include imagenes;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.textoIndex {
+    padding: 20px;
+    text-align: justify;
+    background: $negro-custom;
+
+    p {
+        line-height: 35px;
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+}

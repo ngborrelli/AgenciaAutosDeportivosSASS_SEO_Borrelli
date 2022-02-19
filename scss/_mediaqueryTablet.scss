@@ -1,0 +1,92 @@
+/*---------------------------------------------------------------------------*/
+/* Media Query para Tablet --------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+@media (max-width: $maxwidth-tablet) {
+    
+    html {
+        font-size: map-get($font-general, "tablet");
+    }
+
+    #gridGeneral {
+        grid-template-areas:
+        "cabecera"
+        "menu"
+        "contenido"
+        "pie";
+    
+        grid-gap: 0px;
+        grid-template-rows: 60px 60px auto 50px;
+        grid-template-columns: 100%;
+        height: 100vh;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .tituloPagina h2 {
+        font-size: map-get($font-titulo, "tablet");
+    }
+
+    /* Tablet marcas.html ---------------------------------------------------*/
+
+    .cajaMarca {
+        width: 100%
+    }
+
+    /* Tablet nosotros.html -------------------------------------------------*/
+
+    .linksInternos {
+        padding: 15px 0px 15px 0px;
+    }
+
+    /* Tablet consultas.html ------------------------------------------------*/
+
+    .formConsultas input[type=text], .formConsultas input[type=email], .formConsultas textarea, .formConsultas select{
+        padding: 6px;
+        margin-top: 6px;
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    .cajaTelefonoForm, .cajaMarcas {
+        width: 100%;
+        display: block;
+    }
+
+    .cajaEmpresaParticular, .cajaMantenermeInformado {
+        width: 100%;
+        display: block;
+    }
+    
+    .cajaMantenermeInformado {
+        padding: 20px 0px 20px 0px;
+        text-align: left;
+    }
+
+    #btnEnviar {
+        margin-top: 20px;
+    }
+
+    /* Tablet contacto.html -------------------------------------------------*/
+
+    .contenido.contacto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cajaContacto {
+        width: 100%;
+    }
+}
